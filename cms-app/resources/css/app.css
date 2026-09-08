@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Custom Image Alignment in Prose / Article Body */
+.prose img[data-align="center"] {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+}
+
+.prose img[data-align="left"] {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+    display: block !important;
+}
+
+.prose img[data-align="right"] {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    display: block !important;
+}
+
+/* Custom Scrollbar for Admin Panel */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.2);
+    border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(148, 163, 184, 0.4);
+}
+
