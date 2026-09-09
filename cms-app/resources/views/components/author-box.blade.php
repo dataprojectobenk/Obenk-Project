@@ -4,7 +4,7 @@
 ])
 
 <div {{ $attributes->merge(['class' => 'p-6 sm:p-8 rounded-2xl bg-slate-50 border border-slate-200/80 flex flex-col sm:flex-row items-start sm:items-center gap-5 dark:bg-slate-900/60 dark:border-slate-800']) }}>
-    <a href="{{ route('author.show', $author->username) }}" class="shrink-0">
+    <a href="{{ route('author.show', $author->username) }}" class="n">
         <img src="{{ $author->avatar_url ?? 'https://ui-avatars.com/api/?name=' . urlencode($author->name) . '&background=6366f1&color=fff&size=128' }}" alt="{{ $author->name }}" class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl object-cover ring-2 ring-indigo-500/20 shadow-md">
     </a>
 

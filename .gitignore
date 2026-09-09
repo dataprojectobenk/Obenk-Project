@@ -1,0 +1,47 @@
+# Root Git Ignore for Obenk-Project Workspace
+
+# Flutter & Dart (store_apps)
+store_apps/.dart_tool/
+store_apps/.flutter-plugins
+store_apps/.flutter-plugins-dependencies
+store_apps/.pub-cache/
+store_apps/.pub/
+store_apps/build/
+store_apps/coverage/
+store_apps/**/*.g.dart.tmp
+store_apps/android/.gradle/
+store_apps/android/app/build/
+store_apps/android/app/debug/
+store_apps/android/app/profile/
+store_apps/android/app/release/
+store_apps/ios/Pods/
+store_apps/ios/.symlinks/
+store_apps/ios/Flutter/.last_build_id
+store_apps/windows/flutter/ephemeral/
+store_apps/linux/flutter/ephemeral/
+store_apps/macos/Flutter/ephemeral/
+
+# CMS App / Web (cms-app)
+cms-app/node_modules/
+cms-app/vendor/
+cms-app/.env
+cms-app/public/storage/
+cms-app/storage/*.key
+cms-app/storage/logs/
+cms-app/storage/framework/cache/
+cms-app/storage/framework/sessions/
+cms-app/storage/framework/views/
+
+# IDE & Editor
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Log files & temp
+*.log
+*.tmp
+
