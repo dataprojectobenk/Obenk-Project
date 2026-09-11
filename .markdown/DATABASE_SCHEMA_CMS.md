@@ -575,20 +575,27 @@ flowchart TD
 
 ## 7. CHECKLIST TAHAPAN IMPLEMENTASI
 
+- [x] **1. Persetujuan Rancangan Skema Basis Data** (Tahap saat ini)
+- [ ] **2. Inisialisasi Project Laravel**:
 - [x] **1. Persetujuan Rancangan Skema Basis Data**
 - [x] **2. Inisialisasi Project Laravel**:
   - Setup database driver & `.env`
   - Setup Laravel Sanctum & CORS
+- [ ] **3. Eksekusi Migrations (14 Tabel)**:
 - [x] **3. Eksekusi Migrations (14 Tabel)**:
   - Users & RBAC migrations
   - Media & Categories/Tags migrations
   - Posts & Comments migrations
   - Settings & Activity Logs migrations
+- [ ] **4. Eloquent Models, Observers & Seeders**:
 - [x] **4. Eloquent Models, Observers & Seeders**:
   - Model relationship definitions
   - Auto-slug generator & Counter Cache Observers
   - Super Admin & Default Settings Seeder
+- [ ] **5. Pembuatan Public Blade Views & Controllers**:
 - [x] **5. Pembuatan Public Blade Views & Controllers**:
   - Homepage, Blog Index, Single Post, Category/Tag Archive Views
+- [ ] **6. Pembuatan React + Vite Admin Dashboard**:
+  - Setup React router, authentication flow, post editor, media manager
 - [x] **6. Pembuatan React 19 + Inertia.js Admin Dashboard**:
   - Setup Inertia.js React 19, Tiptap Rich Text Editor, Media Picker Modal, RBAC matrix, 100% Mobile-Friendly UI, & Comprehensive Analytics (Best Posts, Visitor Trends, Geographic Visitor Map, Traffic Sources, Device breakdown).
